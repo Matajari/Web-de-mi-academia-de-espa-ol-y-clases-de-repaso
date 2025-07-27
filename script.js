@@ -1,1 +1,4 @@
-console.log("La web está funcionando correctamente");
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Academia Kosmos cargada correctamente.");
+});

@@ -9,18 +9,40 @@
 </head>
 <body>
   <header>
-    <h1>Academia Kosmos</h1>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo de la Academia Kosmos" />
+      <h1>Academia Kosmos</h1>
+    </div>
     <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Cursos</a>
-      <a href="#">Contacto</a>
+      <a href="#inicio">Inicio</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Bienvenido/a</h2>
-      <p>Ofrecemos clases de español para extranjeros y apoyo escolar para estudiantes locales.</p>
+    <section id="inicio">
+      <h2>Bienvenido/a a la Academia Kosmos</h2>
+      <p>Enseñamos español a extranjeros y ofrecemos clases de repaso para alumnos locales en Torrevieja.</p>
+    </section>
+
+    <section id="cursos">
+      <h2>Nuestros Cursos</h2>
+      <ul>
+        <li><strong>Español para extranjeros:</strong> A1, A2, B1, B2.</li>
+        <li><strong>Clases de repaso:</strong> Primaria, ESO y Bachillerato.</li>
+        <li><strong>Intensivos:</strong> DELE, EBAU y otros exámenes oficiales.</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="#" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 
