@@ -1,32 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Academia Kosmos</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Selector de idiomas -->
   <select id="languageSwitcher">
-  <option value="es">Español</option>
-  <option value="en">English</option>
-  <option value="ru">Русский</option>
-  <option value="zh">中文</option>
-</select>
-<h1 data-lang-es="Bienvenido a Akademia Kosmos"
-    data-lang-en="Welcome to Akademia Kosmos"
-    data-lang-ru="Добро пожаловать в Академию Космос"
-    data-lang-zh="欢迎来到 Kosmos 学院"></h1>
+    <option value="es">Español</option>
+    <option value="en">English</option>
+    <option value="ru">Русский</option>
+    <option value="zh">中文</option>
+  </select>
+
+  <!-- Encabezado multilingüe -->
+  <h1 data-lang-es="Bienvenido a Akademia Kosmos"
+      data-lang-en="Welcome to Akademia Kosmos"
+      data-lang-ru="Добро пожаловать в Академию Космос"
+      data-lang-zh="欢迎来到 Kosmos 学院"></h1>
+
+  <!-- Oferta relámpago con contador -->
   <div class="oferta">
-  <h3>Clases relámpago</h3>
-  <p><del>70€</del> <strong>49€</strong> 🌟 ¡Descuento del 30%!</p>
-  <p>Oferta válida por: <span id="countdown"></span></p>
-</div>
+    <h3>Clases relámpago</h3>
+    <p><del>70€</del> <strong>49€</strong> 🌟 ¡Descuento del 30%!</p>
+    <p>Oferta válida por: <span id="countdown"></span></p>
+  </div>
+
+  <!-- Navegación -->
   <header>
     <div class="logo">
-      <img src="img/logo.png" alt="Logo de la Academia Kosmos" />
-      <h1>Academia Kosmos</h1>
+      <h2>Academia Kosmos</h2>
     </div>
     <nav>
       <a href="#inicio">Inicio</a>
@@ -35,10 +41,21 @@
     </nav>
   </header>
 
+  <!-- Contenido principal -->
   <main>
     <section id="inicio">
-      <h2>Bienvenido/a a la Academia Kosmos</h2>
-      <p>Enseñamos español a extranjeros y ofrecemos clases de repaso para alumnos locales en Torrevieja.</p>
+      <h2 data-lang-es="Bienvenido/a a la Academia Kosmos"
+          data-lang-en="Welcome to Academia Kosmos"
+          data-lang-ru="Добро пожаловать в Академию Космос"
+          data-lang-zh="欢迎来到 Kosmos 学院">
+        Bienvenido/a a la Academia Kosmos
+      </h2>
+      <p data-lang-es="Enseñamos español a extranjeros y clases de repaso en Torrevieja."
+         data-lang-en="We teach Spanish to foreigners and tutoring in Torrevieja."
+         data-lang-ru="Преподаем испанский иностранцам и даем повторные уроки в Торревьехе."
+         data-lang-zh="我们在托雷维耶哈为外国人提供西班牙语教学和课程辅导。">
+         Enseñamos español a extranjeros y clases de repaso en Torrevieja.
+      </p>
     </section>
 
     <section id="cursos">
@@ -53,14 +70,15 @@
     <section id="contacto">
       <h2>Contacto</h2>
       <form action="#" method="POST">
-        <input type="text" name="nombre" placeholder="Tu nombre" required>
-        <input type="email" name="email" placeholder="Tu correo" required>
+        <input type="text" name="nombre" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu correo" required />
         <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
         <button type="submit">Enviar</button>
       </form>
     </section>
   </main>
 
+  <!-- Pie de página -->
   <footer>
     <p>© 2025 Academia Kosmos | Torrevieja</p>
   </footer>
