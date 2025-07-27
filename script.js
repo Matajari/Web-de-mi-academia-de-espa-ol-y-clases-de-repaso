@@ -1,0 +1,1 @@
+console.log("La web está funcionando correctamente");
