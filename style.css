@@ -1,52 +1,82 @@
+/* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  color: #333;
 }
 
+/* Selector de idiomas */
+.language-switcher {
+  text-align: right;
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+.language-switcher select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Encabezado */
 header {
-  background-color: #333;
+  background: #2c3e50;
   color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-nav a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-}
-
-.oferta {
-  background-color: #fff3cd;
-  border-left: 5px solid #ffa500;
-  padding: 10px;
-  margin: 20px 0;
-}
-
-form {
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-input, textarea {
-  padding: 10px;
-  width: 100%;
+/* Oferta relámpago */
+.oferta {
+  background: #e74c3c;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.oferta del {
+  opacity: 0.8;
+}
+
+/* Secciones */
+section {
+  padding: 2rem;
+  margin: 1rem 0;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Formulario */
+form {
+  display: grid;
+  gap: 1rem;
   max-width: 500px;
 }
 
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
 button {
-  background: #6a0dad;
+  background: #2c3e50;
   color: white;
+  padding: 0.5rem 1rem;
   border: none;
-  padding: 10px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
+/* Pie de página */
 footer {
-  margin-top: 40px;
   text-align: center;
-  font-size: 0.9em;
+  padding: 1rem;
+  background: #34495e;
+  color: white;
 }
